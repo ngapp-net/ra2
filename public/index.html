@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>红色警戒2 - 尤里的复仇</title>
+  <script src="./assets/script/tailwindcss.js"></script>
+  <link rel="stylesheet" href="./assets/style/index.css">
+</head>
+
+<body>
+  <!-- 动态背景 -->
+  <div class="animated-bg"></div>
+  <div class="grid-bg"></div>
+
+  <!-- 粒子效果 -->
+  <div class="particles" id="particles"></div>
+
+  <!-- 主内容 -->
+  <div class="relative z-10">
+    <!-- 导航栏 -->
+    <nav class="fixed top-0 w-full backdrop-blur-md bg-black/30 border-b border-cyan-500/20 z-50">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="orbitron text-2xl font-bold glow-text">红色警戒2 - 尤里的复仇</div>
+        <div class="hidden md:flex gap-8 text-lg">
+          <a href="#home" class="hover:text-cyan-400 transition">首页</a>
+          <a href="#features" class="hover:text-cyan-400 transition">特色</a>
+          <a href="#donate" class="hover:text-cyan-400 transition">支持我们</a>
+        </div>
+        <a href="#download" class="px-6 py-2 bg-cyan-500 hover:bg-cyan-600 rounded-lg font-semibold transition">下载</a>
+      </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h1 class="orbitron text-7xl md:text-9xl font-black mb-6 glow-text leading-tight">
+          红色警戒2<br />尤里的复仇
+        </h1>
+        <p class="text-2xl md:text-3xl text-gray-300 mb-12 font-light tracking-wide">
+          体验经典的即时战略游戏
+        </p>
+        <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+          <a href="#download"
+            class="btn-download px-12 py-5 bg-cyan-500 rounded-lg text-xl font-bold orbitron glow-cyan relative z-10">
+            立即下载
+          </a>
+          <button
+            class="px-12 py-5 border-2 border-pink-500 rounded-lg text-xl font-bold orbitron hover:bg-pink-500/20 transition glow-pink">
+            观看预告片
+          </button>
+        </div>
+
+        <!-- 游戏主图 -->
+        <div class="mt-20 relative">
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10"></div>
+          <img src="./assets/image/banner.png" alt="游戏主图"
+            class="w-full rounded-2xl border-2 border-cyan-500/30 glow-cyan">
+        </div>
+      </div>
+    </section>
+
+    <!-- 特色功能 -->
+    <section id="features" class="py-32 scroll-fade-in">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="orbitron text-5xl md:text-6xl font-bold text-center mb-20 glow-text">游戏特色</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-gradient-to-br from-cyan-500/10 to-transparent border border-cyan-500/30 rounded-2xl p-8 hover:border-cyan-500 transition backdrop-blur-sm">
+            <div class="text-5xl mb-4">⚡</div>
+            <h3 class="orbitron text-2xl font-bold mb-4">极速战斗</h3>
+            <p class="text-gray-400 text-lg leading-relaxed">打开游戏就在设置界面, 点击开始游戏即可进入。</p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-pink-500/10 to-transparent border border-pink-500/30 rounded-2xl p-8 hover:border-pink-500 transition backdrop-blur-sm">
+            <div class="text-5xl mb-4">🎮</div>
+            <h3 class="orbitron text-2xl font-bold mb-4">全屏或窗口模式</h3>
+            <p class="text-gray-400 text-lg leading-relaxed">可以设置游戏运行在窗口模式或全屏模式。</p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-cyan-500/10 to-transparent border border-cyan-500/30 rounded-2xl p-8 hover:border-cyan-500 transition backdrop-blur-sm">
+            <div class="text-5xl mb-4">🌍</div>
+            <h3 class="orbitron text-2xl font-bold mb-4">自定义地图</h3>
+            <p class="text-gray-400 text-lg leading-relaxed">可指定地图文件自动游戏, 方便地图作者测试地图。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 捐助区域 -->
+    <section id="donate" class="py-32 scroll-fade-in">
+      <div class="max-w-4xl mx-auto px-6">
+        <div
+          class="bg-gradient-to-br from-cyan-500/10 via-pink-500/10 to-transparent border-2 border-cyan-500/30 rounded-3xl p-12 backdrop-blur-md text-center">
+          <h2 class="orbitron text-5xl font-bold mb-6 glow-text">支持我们的开发</h2>
+          <p class="text-xl text-gray-300 mb-10 leading-relaxed">
+            您的支持将帮助我们持续改进游戏体验，开发更多精彩内容。<br />
+            所有捐助者都将获得独家游戏皮肤和特权！
+          </p>
+          <div class="flex flex-col md:flex-row gap-6 justify-center">
+            <button
+              class="px-10 py-4 bg-cyan-500 rounded-xl text-xl font-bold orbitron hover:bg-cyan-600 transition glow-cyan">
+              捐助
+            </button>
+            <button
+              class="px-10 py-4 border-2 border-pink-500 rounded-xl text-xl font-bold orbitron hover:bg-pink-500/20 transition glow-pink">
+              💎 成为赞助商
+            </button>
+          </div>
+          <div class="mt-12 grid grid-cols-3 gap-8 text-center">
+            <div>
+              <div class="orbitron text-4xl font-bold text-cyan-400 mb-2">1M+</div>
+              <div class="text-gray-400">活跃玩家</div>
+            </div>
+            <div>
+              <div class="orbitron text-4xl font-bold text-pink-400 mb-2">50K+</div>
+              <div class="text-gray-400">支持者</div>
+            </div>
+            <div>
+              <div class="orbitron text-4xl font-bold text-cyan-400 mb-2">4.9★</div>
+              <div class="text-gray-400">用户评分</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="py-12 border-t border-cyan-500/20 backdrop-blur-md">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+          <div class="orbitron text-2xl font-bold glow-text">红色警戒2 - 尤里的复仇</div>
+          <div class="flex gap-8">
+            <a href="#" class="text-gray-400 hover:text-cyan-400 transition">关于我们</a>
+            <a href="#" class="text-gray-400 hover:text-cyan-400 transition">隐私政策</a>
+            <a href="https://demo.ngapp.net/" class="text-gray-400 hover:text-cyan-400 transition">我的案例</a>
+            <a href="#" class="text-gray-400 hover:text-cyan-400 transition">联系我们</a>
+          </div>
+          <div class="flex gap-6 text-2xl">
+            <a href="#" class="hover:text-cyan-400 transition">
+              <svg width="98" height="96" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+                  fill="#24292f" />
+              </svg></a>
+          </div>
+        </div>
+        <div class="text-center mt-8 text-gray-500">
+          © 2025 红色警戒2 - 尤里的复仇. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./assets/script/index.js"></script>
+</body>
+
+</html>
