@@ -28,12 +28,12 @@
           <a href="#features" class="hover:text-cyan-400 transition">特色</a>
           <a href="#donate" class="hover:text-cyan-400 transition">支持我们</a>
         </div>
-        <a href="https://github.com/ngapp-net/ra2-client-source/releases/download/1.0.0/Ra2-2025-12-13.7z"
+        <a href="https://github.com/ngapp-net/ra2-client-source/releases/download/1.0.2/Ra2_2025-12-26.7z"
           class="px-6 py-2 bg-cyan-500 hover:bg-cyan-600 rounded-lg font-semibold transition">下载</a>
       </div>
     </nav>
 
-    <!-- 英雄区域 -->
+    <!-- 下载区域 -->
     <section id="home" class="min-h-screen flex items-center justify-center pt-20">
       <div class="max-w-7xl mx-auto px-6 text-center">
         <h1 class="orbitron text-7xl md:text-9xl font-black mb-6 glow-text leading-tight">
@@ -43,9 +43,9 @@
           体验经典的即时战略游戏
         </p>
         <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
-          <a href="https://github.com/ngapp-net/ra2-client-source/releases/download/1.0.0/Ra2-2025-12-13.7z"
+          <a href="https://github.com/ngapp-net/ra2-client-source/releases/download/1.0.2/Ra2_2025-12-26.7z"
             class="btn-download px-12 py-5 bg-cyan-500 rounded-lg text-xl font-bold orbitron glow-cyan relative z-10">
-            立即下载
+            点击下载 (445 MB)
           </a>
           <!-- <button
             class="px-12 py-5 border-2 border-pink-500 rounded-lg text-xl font-bold orbitron hover:bg-pink-500/20 transition glow-pink">
@@ -83,7 +83,7 @@
             class="bg-gradient-to-br from-cyan-500/10 to-transparent border border-cyan-500/30 rounded-2xl p-8 hover:border-cyan-500 transition backdrop-blur-sm">
             <div class="text-5xl mb-4">🌍</div>
             <h3 class="orbitron text-2xl font-bold mb-4">自定义地图</h3>
-            <p class="text-gray-400 text-lg leading-relaxed">可指定地图文件自动游戏, 方便地图作者测试地图。</p>
+            <p class="text-gray-400 text-lg leading-relaxed">可指定地图文件启动游戏, 方便地图作者测试地图。</p>
           </div>
         </div>
       </div>
@@ -97,25 +97,25 @@
           <h2 class="orbitron text-5xl font-bold mb-6 glow-text">支持我们的开发</h2>
           <p class="text-xl text-gray-300 mb-10 leading-relaxed">
             您的支持将帮助我们持续改进游戏体验，开发更多精彩内容。<br />
-            所有捐助者都将获得独家游戏皮肤和特权！
+            <img src="./assets/image/donate.png" alt="" id="donate-img" style="display: none;" />
           </p>
           <div class="flex flex-col md:flex-row gap-6 justify-center">
-            <button
+            <button onclick="document.getElementById('donate-img').style.display = 'block';"
               class="px-10 py-4 bg-cyan-500 rounded-xl text-xl font-bold orbitron hover:bg-cyan-600 transition glow-cyan">
               捐助
             </button>
-            <button
+            <!-- <button
               class="px-10 py-4 border-2 border-pink-500 rounded-xl text-xl font-bold orbitron hover:bg-pink-500/20 transition glow-pink">
               💎 成为赞助商
-            </button>
+            </button> -->
           </div>
           <div class="mt-12 grid grid-cols-3 gap-8 text-center">
             <div>
-              <div class="orbitron text-4xl font-bold text-cyan-400 mb-2">1M+</div>
+              <div class="orbitron text-4xl font-bold text-cyan-400 mb-2">1</div>
               <div class="text-gray-400">活跃玩家</div>
             </div>
             <div>
-              <div class="orbitron text-4xl font-bold text-pink-400 mb-2">50K+</div>
+              <div class="orbitron text-4xl font-bold text-pink-400 mb-2">2</div>
               <div class="text-gray-400">支持者</div>
             </div>
             <div>
